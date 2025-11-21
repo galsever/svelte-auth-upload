@@ -4,4 +4,4 @@
             <p class="font-medium text-white">Log in with Discord</p>
         </div>
     </a>
-</div>
+    </div>
