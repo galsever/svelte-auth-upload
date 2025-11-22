@@ -16,14 +16,24 @@
     const file = files?.[0]
     if (!file) return
 
-    const post = await createPost({
+    const postCreateResponse = await createPost({
         content: "Test Post",
         uploadRequest: {
             contentType: file.type,
             size: file.size
         }
     })
-    console.log(post)
-    const res = await fetch("http://localhost:8080/auth/me")
+    if (!postCreateResponse) return
+    console.log(postCreateResponse)
+
+    const res = await fetch(postCreateResponse.url, {
+        method: "PUT",
+        headers: {
+            "Content-Type": file.type,
+        },
+        credentials: "omit",
+        body: file
+    })
     console.log(res)
+
 }} class="p-3 bg-amber-500 rounded-lg">Create Test Post</button>

@@ -16,6 +16,7 @@ export async function request(
         headers: {
             'Content-Type': 'application/json',
         },
+        credentials: "include"
     }
 
     if (inputBody !== null) {
