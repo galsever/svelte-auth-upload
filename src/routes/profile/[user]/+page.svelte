@@ -1,6 +1,6 @@
 <script lang="ts">
 
-    import {createPost} from "$lib/api/routes.ts";
+    import {createPost, finishPost} from "$lib/api/routes.ts";
 
     const { data } = $props()
     const user = data.user
@@ -34,6 +34,13 @@
         credentials: "omit",
         body: file
     })
-    console.log(res)
+    if (!res.ok) return
+
+    const result = await finishPost({
+        id: postCreateResponse.id
+    })
+
+    console.log(result)
+
 
 }} class="p-3 bg-amber-500 rounded-lg">Create Test Post</button>
