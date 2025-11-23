@@ -2,6 +2,7 @@
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
     import Navbar from "$lib/components/navbar.svelte";
+    import { ModeWatcher } from "mode-watcher";
 
     let { children } = $props();
 </script>
@@ -10,8 +11,7 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
+<ModeWatcher />
 <Navbar />
 
-<div class="bg-zinc-800">
-    {@render children()}
-</div>
+{@render children()}

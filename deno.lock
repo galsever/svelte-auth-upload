@@ -1,14 +1,18 @@
 {
   "version": "5",
   "specifiers": {
+    "npm:@iconify/svelte@^5.1.0": "5.1.0_svelte@5.43.6__acorn@8.15.0",
     "npm:@sveltejs/adapter-auto@7": "7.0.0_@sveltejs+kit@2.48.4__@sveltejs+vite-plugin-svelte@6.2.1___svelte@5.43.6____acorn@8.15.0___vite@7.2.2____picomatch@4.0.3__svelte@5.43.6___acorn@8.15.0__vite@7.2.2___picomatch@4.0.3__acorn@8.15.0_@sveltejs+vite-plugin-svelte@6.2.1__svelte@5.43.6___acorn@8.15.0__vite@7.2.2___picomatch@4.0.3_svelte@5.43.6__acorn@8.15.0_vite@7.2.2__picomatch@4.0.3",
     "npm:@sveltejs/kit@^2.47.1": "2.48.4_@sveltejs+vite-plugin-svelte@6.2.1__svelte@5.43.6___acorn@8.15.0__vite@7.2.2___picomatch@4.0.3_svelte@5.43.6__acorn@8.15.0_vite@7.2.2__picomatch@4.0.3_acorn@8.15.0",
     "npm:@sveltejs/vite-plugin-svelte@^6.2.1": "6.2.1_svelte@5.43.6__acorn@8.15.0_vite@7.2.2__picomatch@4.0.3",
     "npm:@tailwindcss/forms@~0.5.10": "0.5.10_tailwindcss@4.1.17",
     "npm:@tailwindcss/typography@~0.5.19": "0.5.19_tailwindcss@4.1.17",
     "npm:@tailwindcss/vite@^4.1.14": "4.1.17_vite@7.2.2__picomatch@4.0.3",
+    "npm:mode-watcher@^1.1.0": "1.1.0_svelte@5.43.6__acorn@8.15.0",
     "npm:openapi-typescript-codegen@0.29": "0.29.0",
     "npm:svelte-check@^4.3.3": "4.3.4_svelte@5.43.6__acorn@8.15.0_typescript@5.9.3",
+    "npm:svelte-headlessui@^0.0.46": "0.0.46_svelte@5.43.6__acorn@8.15.0",
+    "npm:svelte-transition@^0.0.17": "0.0.17_svelte@5.43.6__acorn@8.15.0",
     "npm:svelte@^5.41.0": "5.43.6_acorn@8.15.0",
     "npm:tailwindcss@^4.1.14": "4.1.17",
     "npm:typescript@^5.9.3": "5.9.3",
@@ -171,6 +175,16 @@
       "integrity": "sha512-alJC0uCZpTFrSL0CCDjcgleBXPnCrEAhTBILpeAp7M/OFgoqtAetfBzX0xM00MUsVVPpVjlPuMbREqnZCXaTnA==",
       "os": ["win32"],
       "cpu": ["x64"]
+    },
+    "@iconify/svelte@5.1.0_svelte@5.43.6__acorn@8.15.0": {
+      "integrity": "sha512-I14nSqo0pNXO5OKsT61ZO3XIPF4yRHA2ErgPsaZ1sPJdKXn80o7o8jOe1xpWphbb9FihdX6by9zlKKBss61mFw==",
+      "dependencies": [
+        "@iconify/types",
+        "svelte"
+      ]
+    },
+    "@iconify/types@2.0.0": {
+      "integrity": "sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg=="
     },
     "@jridgewell/gen-mapping@0.3.13": {
       "integrity": "sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==",
@@ -652,6 +666,9 @@
       ],
       "bin": true
     },
+    "inline-style-parser@0.2.7": {
+      "integrity": "sha512-Nb2ctOyNR8DqQoR0OwRG95uNWIC0C1lCgf5Naz5H6Ji72KZ8OcFZLz2P5sNgwlyoJ8Yif11oMuYs5pBQa86csA=="
+    },
     "is-reference@3.0.3": {
       "integrity": "sha512-ixkJoqQvAP88E6wLydLGGqCJsrFUnqoH6HnaczB8XmDH1oaWU+xxdptvikTgaEhtZ53Ky6YXiBuUI2WXLMCwjw==",
       "dependencies": [
@@ -771,6 +788,14 @@
     "minimist@1.2.8": {
       "integrity": "sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA=="
     },
+    "mode-watcher@1.1.0_svelte@5.43.6__acorn@8.15.0": {
+      "integrity": "sha512-mUT9RRGPDYenk59qJauN1rhsIMKBmWA3xMF+uRwE8MW/tjhaDSCCARqkSuDTq8vr4/2KcAxIGVjACxTjdk5C3g==",
+      "dependencies": [
+        "runed@0.25.0_svelte@5.43.6__acorn@8.15.0",
+        "svelte",
+        "svelte-toolbelt"
+      ]
+    },
     "mri@1.2.0": {
       "integrity": "sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA=="
     },
@@ -854,6 +879,20 @@
       ],
       "bin": true
     },
+    "runed@0.23.4_svelte@5.43.6__acorn@8.15.0": {
+      "integrity": "sha512-9q8oUiBYeXIDLWNK5DfCWlkL0EW3oGbk845VdKlPeia28l751VpfesaB/+7pI6rnbx1I6rqoZ2fZxptOJLxILA==",
+      "dependencies": [
+        "esm-env",
+        "svelte"
+      ]
+    },
+    "runed@0.25.0_svelte@5.43.6__acorn@8.15.0": {
+      "integrity": "sha512-7+ma4AG9FT2sWQEA0Egf6mb7PBT2vHyuHail1ie8ropfSjvZGtEAx8YTmUjv/APCsdRRxEVvArNjALk9zFSOrg==",
+      "dependencies": [
+        "esm-env",
+        "svelte"
+      ]
+    },
     "sade@1.8.1": {
       "integrity": "sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==",
       "dependencies": [
@@ -877,6 +916,12 @@
     "source-map@0.6.1": {
       "integrity": "sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g=="
     },
+    "style-to-object@1.0.14": {
+      "integrity": "sha512-LIN7rULI0jBscWQYaSswptyderlarFkjQ+t79nzty8tcIAceVomEVlLzH5VP4Cmsv6MtKhs7qaAiwlcp+Mgaxw==",
+      "dependencies": [
+        "inline-style-parser"
+      ]
+    },
     "svelte-check@4.3.4_svelte@5.43.6__acorn@8.15.0_typescript@5.9.3": {
       "integrity": "sha512-DVWvxhBrDsd+0hHWKfjP99lsSXASeOhHJYyuKOFYJcP7ThfSCKgjVarE8XfuMWpS5JV3AlDf+iK1YGGo2TACdw==",
       "dependencies": [
@@ -889,6 +934,27 @@
         "typescript"
       ],
       "bin": true
+    },
+    "svelte-headlessui@0.0.46_svelte@5.43.6__acorn@8.15.0": {
+      "integrity": "sha512-yl3Pd7/LmIgl6uZ6dB9FuWNGJ+P7bazgJpwhNLA7Rk+AqYITv0vFXjGgl4D9ogAiPCrwjTkEAFMl8ovsk3FJ5Q==",
+      "dependencies": [
+        "svelte"
+      ]
+    },
+    "svelte-toolbelt@0.7.1_svelte@5.43.6__acorn@8.15.0": {
+      "integrity": "sha512-HcBOcR17Vx9bjaOceUvxkY3nGmbBmCBBbuWLLEWO6jtmWH8f/QoWmbyUfQZrpDINH39en1b8mptfPQT9VKQ1xQ==",
+      "dependencies": [
+        "clsx",
+        "runed@0.23.4_svelte@5.43.6__acorn@8.15.0",
+        "style-to-object",
+        "svelte"
+      ]
+    },
+    "svelte-transition@0.0.17_svelte@5.43.6__acorn@8.15.0": {
+      "integrity": "sha512-df3kJdJogRNDGiEwJSb7Pdk8/7ZTcQapHhtQ5VicaT/oUP/BNH5qR5Q3sKvptBvOD0uJSzjjMVC5oLwdgjUdRw==",
+      "dependencies": [
+        "svelte"
+      ]
     },
     "svelte@5.43.6_acorn@8.15.0": {
       "integrity": "sha512-RnyO9VXI85Bmsf4b8AuQFBKFYL3LKUl+ZrifOjvlrQoboAROj5IITVLK1yOXBjwUWUn2BI5cfmurktgCzuZ5QA==",
@@ -976,14 +1042,18 @@
   "workspace": {
     "packageJson": {
       "dependencies": [
+        "npm:@iconify/svelte@^5.1.0",
         "npm:@sveltejs/adapter-auto@7",
         "npm:@sveltejs/kit@^2.47.1",
         "npm:@sveltejs/vite-plugin-svelte@^6.2.1",
         "npm:@tailwindcss/forms@~0.5.10",
         "npm:@tailwindcss/typography@~0.5.19",
         "npm:@tailwindcss/vite@^4.1.14",
+        "npm:mode-watcher@^1.1.0",
         "npm:openapi-typescript-codegen@0.29",
         "npm:svelte-check@^4.3.3",
+        "npm:svelte-headlessui@^0.0.46",
+        "npm:svelte-transition@^0.0.17",
         "npm:svelte@^5.41.0",
         "npm:tailwindcss@^4.1.14",
         "npm:typescript@^5.9.3",

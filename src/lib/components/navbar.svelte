@@ -5,4 +5,5 @@
 
 <div class="h-16 bg-zinc-900 flex justify-between items-center px-96">
     <Logo />
+    <Links />
 </div>

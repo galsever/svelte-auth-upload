@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@theme {
+    --color-primary: #333333;
+    --color-muted: #eaeaea;
+    --color-tertiary: #9e9e9e;
+}
+
+.dark {
+    --color-primary: #d0d0d0;
+    --color-muted: #242424;
+    --color-tertiary: #6a6a6a;
+}
